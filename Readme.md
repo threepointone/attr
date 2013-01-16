@@ -8,7 +8,7 @@
     $ component install threepointone/attr
 
 ## API
-
+```js
 var Attr = require('attr');
 
 // Take any object, and wrap with Attribute functionality
@@ -42,8 +42,7 @@ console.log(x.get('c'));
 
 x.set('c', '125');
 // error: attr:c did not validate for value:125 
-
-
+```
 
 ## Tests
 install dependencies - 
