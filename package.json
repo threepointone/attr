@@ -1,0 +1,24 @@
+{
+  "author": "Sunil Pai <threepointone@gmail.com>",
+  "name": "attr",
+  "description": "Attribute classes",
+  "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/threepointone/attr"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+
+    },
+  "scripts":{
+    "test":"node_modules/.bin/mocha tests/test.js"
+    },
+  "optionalDependencies": {
+    "mocha":"*",
+    "should":"*"
+    },
+  "engines": {
+    "node": "*"
+  }
+}

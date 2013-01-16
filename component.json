@@ -1,0 +1,16 @@
+{
+  "name": "attr",
+  "repo": "threepointone/attr",
+  "description": "attribute classes",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "manuelstofer/each":"*",
+    "gorillatron/extend":"*"
+    },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
