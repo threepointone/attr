@@ -5,8 +5,7 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "manuelstofer/each":"*",
-    "gorillatron/extend":"*"
+    "manuelstofer/each":"*"
     },
   "development": {},
   "license": "MIT",

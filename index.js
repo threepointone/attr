@@ -1,12 +1,21 @@
 "use strict";
 
 var each = require('each'),
-    extend = require('extend'),
-    identity = function(x){return x;};
+    identity = function(x) {
+        return x;
+    };
 
 
 module.exports = Attr;
 
+function extend(obj) {
+    each(Array.prototype.slice.call(arguments, 1), function(source) {
+        for(var prop in source) {
+            obj[prop] = source[prop];
+        }
+    });
+    return obj;
+}
 
 function Attr(obj) {
     if(obj) return mixin(obj);
@@ -47,7 +56,7 @@ Attr.prototype.describe = function(name, spec) {
     }
     this._attrs = this._attrs || {};
 
-    
+
     var attr = this._attrs[name] = extend({}, defaults, spec);
 
     attr.startup = function() {
