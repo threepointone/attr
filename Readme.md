@@ -44,7 +44,7 @@ x.set('c', '125');
 // error: attr:c did not validate for value:125 
 ```
 
-## Tests
+## Tests (pending)
 install dependencies - 
 ```
 npm install
