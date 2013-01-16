@@ -11,6 +11,28 @@
 		Attr(o);
 		o.set('xyz', 123);
 		console.log(o.get('xyz'));
+
+
+		var x = new Attr;		
+
+		x.set('a', 123); // set without describing
+		
+		x.describe('b', { // or describe beforehand
+			value: 'xyz',
+			validate: function(v) {
+				return v % 2 === 0;
+			}
+		});
+
+		console.log(x.get('c'));
+		console.log(x.get('a'));
+		console.log(x.get('b'));
+		
+		try {
+			x.set('b', 21);
+		} catch (e) {
+			console.error(e);
+		}
 	</script>
 
 </body>

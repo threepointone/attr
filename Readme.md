@@ -9,7 +9,16 @@
 
 ## API
 
-   
+
+## Tests
+install dependencies - 
+```
+npm install
+```
+then
+```
+npm test
+```   
 
 ## License
 
